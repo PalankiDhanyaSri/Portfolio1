@@ -1,5 +1,6 @@
 // Message in browser console
 console.log("Portfolio Website Loaded Successfully");
+
 const starsContainer = document.querySelector(".stars");
 
 const numberOfStars = 250;
