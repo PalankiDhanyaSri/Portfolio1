@@ -283,7 +283,9 @@ section{
 .about,
 .skills,
 .projects,
-.contact{
+.contact,
+.experience,
+.activities{
 
     margin:40px;
 
@@ -350,7 +352,77 @@ section h2{
         0 0 25px rgba(56,189,248,.35);
 }
 
-/* PROJECTS */
+/* ==================== PROFESSIONAL EXPERIENCE ==================== */
+
+.experience-card{
+
+    margin-top:25px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:15px;
+
+    transition:0.4s;
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#38bdf8;
+
+    box-shadow:
+        0 0 25px rgba(56,189,248,.35);
+}
+
+.experience-card h3{
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:8px;
+}
+
+.experience-org{
+
+    display:block;
+
+    color:#38bdf8;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    margin-bottom:12px;
+}
+
+.experience-card h4{
+
+    color:white;
+
+    font-size:16px;
+
+    margin-bottom:12px;
+}
+
+.experience-card ul{
+
+    padding-left:20px;
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+    line-height:1.7;
+}
+
+/* ==================== PROJECTS ==================== */
+
 .project-card{
 
     margin-top:25px;
@@ -376,24 +448,9 @@ section h2{
         0 0 25px rgba(56,189,248,.35);
 }
 
-/* CERTIFICATES / TECHNICAL ACTIVITIES */
-.certificates{
+/* ==================== TECHNICAL ACTIVITIES ==================== */
 
-    margin:40px;
-
-    padding:50px;
-
-    border-radius:20px;
-
-    background:rgba(255,255,255,.06);
-
-    backdrop-filter:blur(14px);
-
-    box-shadow:
-        0 15px 40px rgba(0,0,0,.45);
-}
-
-.certificate-card{
+.activity-card{
 
     margin-top:25px;
 
@@ -408,7 +465,7 @@ section h2{
     transition:0.4s;
 }
 
-.certificate-card:hover{
+.activity-card:hover{
 
     transform:translateY(-10px);
 
@@ -418,7 +475,7 @@ section h2{
         0 0 25px rgba(56,189,248,.35);
 }
 
-.certificate-card h3{
+.activity-card h3{
 
     color:white;
 
@@ -427,7 +484,7 @@ section h2{
     margin-bottom:8px;
 }
 
-.cert-org{
+.activity-org{
 
     display:block;
 
@@ -440,18 +497,16 @@ section h2{
     margin-bottom:12px;
 }
 
-.certificate-card p{
+.activity-card h4{
+
+    color:white;
 
     font-size:16px;
 
-    line-height:1.6;
-
-    color:#cbd5e1;
-
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
-.certificate-card ul{
+.activity-card ul{
 
     padding-left:20px;
 
@@ -627,7 +682,11 @@ footer{
 .about:hover,
 .skills:hover,
 .projects:hover,
+.experience:hover,
+.activities:hover,
 .project-card:hover,
+.experience-card:hover,
+.activity-card:hover,
 .skill:hover{
 
     transform:translateY(-8px);
@@ -649,6 +708,15 @@ footer{
     nav ul{
 
         margin-top:15px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    nav ul li{
+
+        margin:5px 10px;
     }
 
     .home h1{
@@ -670,10 +738,12 @@ footer{
     .skills,
     .projects,
     .contact,
-    .certificates{
+    .experience,
+    .activities{
 
         margin:20px;
 
         padding:30px;
     }
+
 }
